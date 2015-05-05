@@ -1,0 +1,507 @@
+@charset "euc-jp";
+/*--------------------------------------------------------------*/
+/* CSS and Graphics are released under Creative Commons License */
+/* http://creativecommons.org/licenses/by-nc-sa/2.1/jp/         */
+/* Copyright (C) 2007, Masanao Takahashi @ BCOOL Inc.           */
+/* http://2bcool.net/                                           */
+/*--------------------------------------------------------------*/
+
+@import url("css/ex.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+}
+
+/* HTML TAG Re-definition */
+
+body {
+	background-color: #FFF;
+	color: #666666;
+	font-family: Verdana, Helvetica, '£Í£Ó £Ð¥´¥·¥Ã¥¯', 'Hiragino Kaku Gothic Pro', '¥Ò¥é¥®¥Î³Ñ¥´ Pro W3', osaka, sans-serif;
+	font-size: 75%;
+	margin: 0;padding: 0;
+	}
+table {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+table td {
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	line-height: 130%;
+	}
+img {
+	border:0;
+}
+/* ------------ Link Color Settings ------------ */
+a {color: #FF6600;text-decoration: none;}
+a:hover {color: #FF0000;text-decoration: underline;}
+a:visited {color: #FF6600;}
+/* ------------ Heading and List tag Settings ------------ */
+h1, h2, h3, h4, h5 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, 'Hiragino Kaku Gothic Pro', osaka, sans-serif;
+	color: #f60;
+	background:inherit;
+	padding: 0;
+	margin: 10px 0 5px;
+}
+h1 {
+	color:#111;
+	background:url(images/c_indent_big2.gif) no-repeat left center;
+	padding: 7px 0 7px 34px;
+	font-size: 125%;
+}
+h2 {
+	color:#111;
+	background:url(images/c_indent1.gif) no-repeat left center;
+	padding: 5px 0 5px 28px;
+	font-size: 112%;
+}
+h3, h4, h5 {
+	font-size: 100%;
+}
+h4,h5 {
+	color: #6075AA;
+}
+
+ul, ol, li {
+	margin: 0 0 0 10px;
+	padding: 2px;
+	text-align: left;
+}
+legend {
+	padding: 3px;
+	color: #477AB8;
+	font-weight: bold;
+}
+hr {
+	height: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 0;
+	background: url(images/dot_line.gif) repeat-x bottom;
+}
+
+/* ------------ layout ------------ */
+.usual {
+	background:#222 url(images/side_area_back.gif);
+}	
+.page {
+	min-width:850px;
+	padding: 0px;
+}
+#header{
+	background-image: url(images/header_back.gif);
+	background-repeat: repeat-x;
+	height: 81px;
+}
+.logolink {
+	float:left;
+}
+.xoops_banner {
+	position:absolute;
+	top:8px;
+	right:8px;
+}
+#main_area {
+	position:absolute;
+	width:80%;
+	margin-left: 20%;
+	background:#FFF url(images/back.gif) repeat-y;
+	min-width:680px;
+}
+#col3, #col2 {
+	background: url(images/c_area_back.gif) repeat-x;
+}
+#header_menu {
+	background: url(images/head_round.gif) no-repeat left top;
+	height:22px;
+	padding:10px 20px;
+}	
+	#header_menu a{
+		color: #FDFDFD;
+	}
+	#header_menu ul {
+		text-align:left;
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	#header_menu li {
+	 	display:inline;
+	 	margin:0;
+		padding:5px;
+	}
+	#header_menu .hm_sub {
+		font-size:75%;
+	}
+#col3 #centercolumn {
+	clear:both;
+	margin-right:20%;
+	overflow:hidden;
+	width:80%;
+}
+#cc_pad {
+	padding:5px 20px;
+}
+#col2 #centercolumn {
+	clear:both;
+	overflow:hidden;
+}
+#side_area {
+	background:url(images/side_head.gif) no-repeat left top;
+	padding-top:30px;
+	color:#CDCDCD;
+	width:20%;
+	min-width:170px;
+}
+#side_area a {
+	color:#F6F6F6;
+}
+#side_area a:hover {
+	color:#F90;
+}
+#leftcolumn {
+	padding:20px 5px 5px 5px;
+}
+#sub_column {
+	width: 20%;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	overflow:hidden;
+}
+#rightcolumn {
+	margin-right:10px;
+}
+#footer {
+	font-size:0.85em;
+	padding-top:10px;
+	border-top: 1px dotted #CCC;
+	margin:0 20px 20px 20px;
+	clear: both;
+}
+
+/* Left */
+#leftcolumn .blockTitle {
+	padding: 4px 0px 4px 26px;
+	font-weight: bold;
+	background: url(images/l_indent1.gif) no-repeat;
+	color:#EFEFEF;
+}
+#leftcolumn .blockContent {
+	padding: 2px 5px 10px;
+	line-height: 120%;
+}
+/* Right */
+#rightcolumn .blockTitle {
+	padding: 4px 0px 4px 20px;
+	font-weight: bold;
+	background: url(images/r_indent2.gif) no-repeat left center;
+	color:#666;
+}
+#rightcolumn .blockContent {	
+	padding: 2px 5px 10px;
+	line-height: 130%;
+}
+
+/* ------------ xoops mainmenu & usermenu ------------ */
+#mainmenu a, #usermenu a {
+	display: block;
+	margin: 0;
+	padding: 4px;
+	border-bottom: 1px dotted #CCC;
+	text-decoration: none;
+}
+
+#mainmenu a:hover {}
+#mainmenu a.menuTop {}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub {margin-left:10px; font-size:90%;}
+
+#usermenu a:hover {}
+#usermenu a.menuTop {}
+#usermenu a.menuMain {}
+#usermenu a.highlight {color: #dd0000; background-color: #ffeedd;}
+
+#leftcolumn #mainmenu a, #leftcolumn #usermenu a {
+	display: block;
+	margin: 0;
+	padding: 4px;
+	border-bottom: 1px dotted #555;
+	text-decoration: none;
+	color:#CDCDCD;
+}
+#leftcolumn #mainmenu a:hover {
+	color: #FF9900;
+	}
+#leftcolumn #mainmenu a.menuTop {}
+#leftcolumn #mainmenu a.menuMain {}
+#leftcolumn #mainmenu a.menuSub {margin-left:10px; font-size:90%;}
+
+#leftcolumn #usermenu a:hover {
+	color: #FF9900;
+}
+#leftcolumn #usermenu a.menuTop {}
+#leftcolumn #usermenu a.menuMain {}
+#leftcolumn #usermenu a.highlight {color: #dd0000; background-color: #ffeedd;}
+
+/* ------------ center content ------------ */
+#content {
+	clear: both;
+	line-height:175%;
+}
+#page_top {
+	clear: both;
+	text-align: right;
+}
+#page_top a {
+	margin-left:auto;
+	display:block;
+	width:65px;
+	height:19px;
+	text-decoration:none;
+	background:url(images/page_top.gif) no-repeat;
+}
+/* Cnter - Cnter */
+.centerCcolumn {
+	clear:both;
+}
+.centerCcolumn .blockTitle {
+	background:#888 url(images/ccblockTitleBack1.gif) no-repeat 5px center;
+	font-weight: bold;
+	color:#EFEFEF;
+	padding:6px 6px 6px 32px;
+	border-top:1px dotted #CCC;
+	border-bottom:1px dotted #CCC;
+}
+.centerCcolumn .blockContent {
+	padding: 3px 3px 10px 3px;
+	line-height: 150%;
+}
+/* Center - Left */
+.centerLcolumn {
+	width: 49%;
+	float: left;
+}
+.centerLcolumn .blockTitle {
+	padding: 4px 0 4px 24px;
+	font-weight: bold;
+	color:#EFEFEF;
+	background:#888 url(images/clblockTitleBack.gif) no-repeat 3px center;
+	border-top: 1px dotted #CCC;
+	border-bottom: 1px dotted #CCC;
+}
+.centerLcolumn .blockContent {
+	padding: 3px 8px 8px 3px;
+	line-height: 140%;
+	margin-bottom:5px;
+}
+/* Cnter - Right */
+.centerRcolumn {
+	width: 49%;
+	float: right;
+}
+.centerRcolumn .blockTitle {
+	padding: 4px 0 4px 24px;
+	font-weight: bold;
+	color:#EFEFEF;
+	background:#888 url(images/crblockTitleBack.gif) no-repeat 3px center;
+	border-top: 1px dotted #CCC;
+	border-bottom: 1px dotted #CCC;
+}
+.centerRcolumn .blockContent {
+	padding: 3px 3px 8px 8px;
+	line-height: 140%;
+	margin-bottom:5px;
+}
+/* ------------ for table ------------ */
+.outer {
+	border: 1px solid #EEE;
+}
+th {
+	padding: 3px;
+	vertical-align: middle;
+	font-weight: normal;
+	color: #666;
+	border-bottom: 1px solid #CCC;
+	background: #EEE;
+}
+.head {
+	padding: 5px;
+	color: inherit;
+	border-bottom: 1px solid #CACACA;
+	background: #F2F2F2;
+}
+.even {
+	padding: 2px;
+	color: inherit;
+	border-bottom: 1px solid #CACACA;
+	background: #F7F7F7;
+}
+.odd {
+	padding: 2px;
+	color: inherit;
+	border-bottom: 1px solid #CACACA;
+	background: #FAFAFA;
+}
+.foot {
+	padding: 5px;
+	font-weight: bold;
+	color: inherit;
+	background: #F2F2F2;
+}
+tr.even td {
+	padding: 2px;
+	border-bottom: 1px solid #CACACA;
+}
+tr.odd td {
+	padding: 2px;
+	border-bottom: 1px solid #CACACA;
+}
+tr.even {
+	color: inherit;
+	background: #F7F7F7;
+}
+tr.odd {
+	color: inherit;
+	background: #FAFAFA;
+}
+tr.odd:hover, tr.even:hover {
+	color: #000;
+	border-bottom: 1px solid #CACACA;
+	background: #DFDFDF;
+}
+
+/* ------------ error message & quote and code ------------ */
+div.errorMsg {
+	background: #F5E8E8;
+	color: #FF0000;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+div.confirmMsg {
+	background: #EFF4DF;
+	color: #003300;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+div.resultMsg {
+	background-color: #FFF;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+div.xoopsCode {
+	background: #EEE;
+	color:inherit;
+	border: 1px inset #CCC;
+	padding: 6px;
+	overflow: auto;
+	width: 95%;
+}
+div.xoopsQuote { 
+	background: #EEE;
+	color:inherit;
+	border: 1px inset #CCC;
+	padding: 6px;
+	overflow: auto;
+	width: 95%;
+}
+/* ------------ for comment area ------------ */
+.formButton {
+	border: 1px outset #616655;
+	background-color: #EEEEEE;
+	color: #7F7F7F;
+}
+/* ------------ for comment ------------ */
+.comTitle {
+	margin-bottom: 2px;
+}
+.comText {
+	padding: 2px;
+}
+.comUserStat {
+	font-size:80%;
+	border: 1px solid #CCC;
+	margin: 2px;
+	padding: 2px;
+	background: #FFF;
+	color:inherit;
+}
+.comUserStatCaption {
+	font-weight: normal;
+}
+.comUserRank {
+	margin: 2px;
+}
+.comUserRankText {
+	font-size:80%;
+}
+.comUserImg {
+	margin: 2px;
+}
+.comDate {
+	font-size:80%;
+}
+.comDateCaption {
+}
+/* ------------ for bulletin or news module ------------ */
+.itemHead {
+	padding: 2px 5px;
+	font-weight: bold;
+	border-bottom: 1px dotted #CCC;
+}
+.itemInfo {
+	text-align: right;
+	padding: 3px 8px;
+}
+.itemTitle a {
+	font-size: 120%;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+.itemPoster {
+	font-size: 90%;
+}
+.itemPostDate {
+	font-size: 90%;
+}
+.itemStats {
+	font-size: 90%;
+}
+.itemBody {
+	padding: 0 8px 0 13px;
+	overflow: hidden;
+}
+.itemText {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 1.5em;
+}
+.itemText:first-letter {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.itemFoot {
+	text-align: right;
+	padding: 2px;
+	border-top:1px dotted #CCC;
+}
+.itemAdminLink {
+	font-size: 90%;
+}
+.itemPermaLink {
+	font-size: 90%;
+}

@@ -1,0 +1,48 @@
+/* ------------ background ------------ */
+.usual {
+	background-color: #FFF;
+	background-image: url();
+	}
+div.page {
+	width:100%;
+	margin:0;
+	padding:0;
+	}
+/* ------------ Header elements ------------ */
+
+#header {
+	display:none;
+}
+
+/* ------------ Content Area ------------ */
+#main_area {
+	background: url();
+	width:100%;
+	margin:0;
+}
+#header_menu {
+	display:none;
+}
+#col3, #col2 {
+	background: url();
+}
+#col3 #centercolumn {
+	background: url();
+	width:100%;
+	margin:0;
+}
+#col2 #centercolumn {
+	background: url();
+}
+#page_top {
+	display:none;
+}
+#sub_column {
+	display:none;
+}
+#side_area {
+	display:none;
+}
+#footer {
+	display:none;
+}
